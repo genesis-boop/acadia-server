@@ -1,17 +1,10 @@
 [
+  { "text": "This is my first note", "date": "14/04/2024", "id": "1" },
+  { "text": "This is my second note", "date": "14/04/2024", "id": "2" },
+  { "text": "This is my third note", "date": "14/04/2024", "id": "3" },
   {
-    "text": "This is my first note",
-    "date": "14/04/2024",
-    "id": "1"
-  },
-  {
-    "text": "This is my second note",
-    "date": "14/04/2024",
-    "id": "2"
-  },
-  {
-    "text": "This is my third note",
-    "date": "14/04/2024",
-    "id": "3"
+    "text": "ASDAWDHAUISDHUIAWHUIDAUIWHDUIAHDIUHASD",
+    "date": "4/15/2024",
+    "id": "5ejm0lv0pr6s8"
   }
 ]
