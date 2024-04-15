@@ -32,6 +32,35 @@ app.post('/todo', async (req, res) => {
     }
 })
 
+app.post('/notes', async (req, res) => {
+    try {
+        const newNote = req.body;
+        newNote.id = uniqid();
+
+        const noteData = await fs.readFile('./data/notes.json', 'utf-8');
+        const note = JSON.parse(noteData);
+        note.push(newNote);
+
+        await fs.writeFile('./data/notes.json', JSON.stringify(note));
+        res.status(201).json({message: 'Note Created!'});
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: 'Failed to save task'});
+    }
+})
+
+app.get('/notes', async (req, res) => {
+    try {
+        const noteData = await fs.readFile('./data/notes.json', 'utf-8');
+        const notes = JSON.parse(noteData);
+
+        res.status(200).json(notes); // Send the array of notes
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Failed to fetch notes' }); 
+    }
+});
 
 
 app.listen(PORT, () => {

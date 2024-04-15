@@ -6,5 +6,13 @@
     "priority": 2,
     "tags": "",
     "id": "5e7nolutdl86v"
+  },
+  {
+    "title": "Do chores",
+    "description": "Wow",
+    "dueDate": "2024-04-12T07:00:00.000Z",
+    "priority": 3,
+    "tags": ["Urgent", "Home"],
+    "id": "1pa5wluvqd56t"
   }
 ]
