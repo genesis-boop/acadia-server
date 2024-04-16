@@ -32,6 +32,17 @@ app.post('/todo', async (req, res) => {
     }
 })
 
+app.get('/todo', async(req, res) => {
+    try {
+        const todoData = await fs.readFile('./data/todo.json', 'utf-8');
+        const todos = JSON.parse(todoData);
+        res.status(200).json(todos);
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({ message: 'Failed to fetch to-dos'});
+    }
+});
+
 app.post('/notes', async (req, res) => {
     try {
         const newNote = req.body;
