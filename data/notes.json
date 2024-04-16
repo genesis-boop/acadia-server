@@ -2,10 +2,10 @@
   { "text": "This is my first note", "date": "14/04/2024", "id": "1" },
   { "text": "This is my second note", "date": "14/04/2024", "id": "2" },
   { "text": "This is my third note", "date": "14/04/2024", "id": "3" },
+  { "text": "Added typed note", "date": "4/15/2024", "id": "5ejm0lv0pr6s8" },
   {
-    "text": "ASDAWDHAUISDHUIAWHUIDAUIWHDUIAHDIUHASD",
-    "date": "4/15/2024",
-    "id": "5ejm0lv0pr6s8"
-  },
-  { "text": "Noel is gay", "date": "4/15/2024", "id": "1pf1klv1icphh" }
+    "text": "Another Added Typed Note",
+    "date": "4/16/2024",
+    "id": "5eiu8lv26fwlq"
+  }
 ]
